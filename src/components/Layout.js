@@ -3,7 +3,7 @@ import LoginForm from './LoginForm'
 import ChatContainer from './chat/ChatContainer'
 import { USER_CONNECTED, LOGOUT } from '../Constants'
 
-var serverURI = process.env.REACT_APP_SERVER 
+var serverURI = "http://localhost:3231"
 var io = require('socket.io-client')
 
 export default class Layout extends Component {

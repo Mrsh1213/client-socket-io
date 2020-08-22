@@ -16,11 +16,12 @@
     "uuid": "^8.3.0"
   },
   "scripts": {
-    "start": "concurrently 'npm run react' 'npm run server' ",
-    "react": "react-scripts start",
-    "server": "nodemon ./src/server/index.js",
+    "start":"concurrently 'npm run r-start' 'npm run nodemon' 'npm run styles'",
+    "r-start": "react-scripts start",
+    "nodemon": "nodemon src/server/server.js",
+    "styles": "sass --watch --style compressed src/styles/index.scss:src/styles/index.css",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

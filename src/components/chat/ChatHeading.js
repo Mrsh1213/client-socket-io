@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import FAVideo from 'react-icons/lib/fa/video-camera'
-import FAUserPlus from 'react-icons/lib/fa/user-plus'
-import MdEllipsisMenu from 'react-icons/lib/md/keyboard-control'
+import {FaUserPlus,FaVideo} from 'react-icons/fa'
+import {MdKeyboardVoice} from 'react-icons/md'
 
 export default class ChatHeading extends Component {
 	render() {
@@ -17,9 +16,9 @@ export default class ChatHeading extends Component {
 					</div>
 				</div>
 				<div className="options">
-					<FAVideo />
-					<FAUserPlus />
-					<MdEllipsisMenu />
+					<FaVideo />
+					<FaUserPlus />
+					<MdKeyboardVoice />
 				</div>
 			</div>
 		);
